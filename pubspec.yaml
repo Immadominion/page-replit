@@ -1,0 +1,53 @@
+name: profile_page
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.9.0
+  flutter_share: ^2.0.0
+  flutter_svg: ^2.0.10+1
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/svgs/
+    - assets/pngs/
+
+  fonts:
+    - family: Hanken
+      fonts:
+        - asset: fonts/HankenGrotesk-Black.ttf
+        - asset: fonts/HankenGrotesk-BlackItalic.ttf
+        - asset: fonts/HankenGrotesk-Bold.ttf
+        - asset: fonts/HankenGrotesk-BoldItalic.ttf
+        - asset: fonts/HankenGrotesk-ExtraBold.ttf
+        - asset: fonts/HankenGrotesk-ExtraBoldItalic.ttf
+        - asset: fonts/HankenGrotesk-ExtraLight.ttf
+        - asset: fonts/HankenGrotesk-ExtraLightItalic.ttf
+        - asset: fonts/HankenGrotesk-Italic.ttf
+        - asset: fonts/HankenGrotesk-Light.ttf
+        - asset: fonts/HankenGrotesk-LightItalic.ttf
+        - asset: fonts/HankenGrotesk-Medium.ttf
+        - asset: fonts/HankenGrotesk-MediumItalic.ttf
+        - asset: fonts/HankenGrotesk-Regular.ttf
+        - asset: fonts/HankenGrotesk-SemiBold.ttf
+        - asset: fonts/HankenGrotesk-SemiBoldItalic.ttf
+        - asset: fonts/HankenGrotesk-Thin.ttf
+        - asset: fonts/HankenGrotesk-ThinItalic.ttf
+    - family: Concert
+      fonts:
+        - asset: fonts/ConcertOne-Regular.ttf
+        
