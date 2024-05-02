@@ -13,7 +13,10 @@ class ProfileScreen extends StatelessWidget {
       designSize: const Size(375, 812),
     );
     return const Scaffold(
-      appBar: ProfileAppBar(),
+      appBar: ProfileAppBar(
+        action1: "currency_exchange", 
+        action2: "bookmark",
+      ),
       body: ProfileBody(),
     );
   }

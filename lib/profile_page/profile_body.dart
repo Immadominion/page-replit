@@ -4,7 +4,7 @@ import 'package:profile_page/profile_page/components/profile_card.dart';
 import 'package:profile_page/profile_page/components/profile_action.dart';
 
 class ProfileBody extends StatelessWidget {
-  const ProfileBody({Key? key}) : super(key: key);
+  const ProfileBody({super.key});
 
   @override
   Widget build(BuildContext context) {
