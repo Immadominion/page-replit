@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
       title: 'Date List View',
       home: DateListView(),
     );
@@ -21,6 +23,8 @@ class DateListView extends StatelessWidget {
     {"date": "2024-04-29", "item": "Item 5"}
   ];
 
+   DateListView({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Sort items by date
@@ -28,7 +32,7 @@ class DateListView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Date List View'),
+        title: const Text('Date List View'),
       ),
       body: ListView.builder(
         itemCount: items.length,
@@ -42,7 +46,7 @@ class DateListView extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     items[index]['date'],
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ),
                 ListTile(
