@@ -9,6 +9,7 @@ Widget profileCTA(
   String svg1 = 'assets/svgs/starr.svg',
   String ctaText = "CTA text",
   String ctaLabel = "CTA button",
+  bool showSvgs = true,
 }) {
   return Container(
     padding: EdgeInsets.symmetric(horizontal: 15.sp, vertical: 10.sp),
@@ -24,7 +25,7 @@ Widget profileCTA(
     ),
     child: Row(
       children: [
-        buildIcon(svg1, ctaLabel, context),
+        showSvgs ? buildIcon(svg1, ctaLabel, context) : const SizedBox(),
         SizedBox(width: 10.w),
         Text(
           ctaText,
@@ -34,13 +35,13 @@ Widget profileCTA(
           ),
         ),
         const Spacer(),
-        buildIcon(
+        showSvgs ? buildIcon(
           svg2,
           ctaLabel,
           context,
           width: 12.w,
           height: 12.h,
-        ),
+        ) : const SizedBox(),
       ],
     ),
   );
